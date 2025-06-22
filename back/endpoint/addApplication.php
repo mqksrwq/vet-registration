@@ -12,7 +12,7 @@ $usersRepository = new JsonRepository("../database/users.json");
 $errors = [];
 $flag = Validator::validatePhone($data['contactNumber']);
 if ($flag == 0) {
-    $errors['contactNumber'] = 'Номер телефона должен быть в формате +7(XXX)XXX-XX-XX';
+    $errors['contactNumber'] = 'Номер телефона должен быть в формате +7(XXX)XXXXXXX';
 }
 $id = Validator::validateApplication($data, $usersRepository);
 if ($id) {

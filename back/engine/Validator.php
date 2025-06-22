@@ -104,7 +104,7 @@ class Validator
         }
         if ($data['contactNumber']) {
             if (!self::validatePhone($data['contactNumber'])) {
-                $errors['contactNumber'] = 'Номер телефона должен быть в формате +7(XXX)XXX-XX-XX';
+                $errors['contactNumber'] = 'Номер телефона должен быть в формате +7(XXX)XXXXXXX';
             }
         }
         if ($data['password']) {
