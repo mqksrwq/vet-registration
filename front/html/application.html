@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма заявки</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript" src="../js/JSLib/jquery-3.7.1.js" defer></script>
+    <script type="module" src="../js/application.js" defer></script>
+</head>
+<body>
+<div class="container">
+    <h2 id="form-title"></h2>
+    <div class="form">
+        <form id="registration-form">
+            <div class="form-group">
+                <label for="laptop-model">Модель ноутбука</label><input type="text" id="laptop-model" required>
+            </div>
+            <div class="form-group">
+                <label for="serial-number">Серийный номер</label><input type="text" id="serial-number" required>
+            </div>
+            <div class="form-group">
+                <label for="contact-number">Контактный номер телефона</label><input type="tel" id="contact-number"
+                                                                                    required>
+                <div class="error-message" id="contactNumber-error"></div>
+            </div>
+            <div class="form-group">
+                <label for="issue-type">Тип проблемы</label>
+                <select id="issue-type" required>
+                    <option value="Не включается">Не включается</option>
+                    <option value="Перегревается">Перегревается</option>
+                    <option value="Тормозит/не работает на полную мощность">Тормозит/не работает на полную мощность
+                    </option>
+                    <option value="Внешние повреждения">Внешние повреждения</option>
+                    <option value="Другое">Другое</option>
+                </select>
+            </div>
+        </form>
+    </div>
+    <div class="error-message" id="registration-error"></div>
+    <div class="register-link-container">
+        <button type="submit" id="registration-button">Отправить заявку</button>
+    </div>
+</div>
+</body>
+</html>
